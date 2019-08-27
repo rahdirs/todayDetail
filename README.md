@@ -14,7 +14,7 @@ console.log(jdate.today());
 ```
 
 ### Output Object
-```json
+```
 { 
   today: 2019-08-27T09:55:02.497Z,
   month: 8,
