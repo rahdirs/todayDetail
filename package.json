@@ -1,6 +1,6 @@
 {
   "name": "today-date-detail",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Get today date, month, and year details.",
   "main": "today.js",
   "scripts": {
