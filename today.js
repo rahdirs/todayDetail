@@ -8,11 +8,13 @@ exports.today = function () {
     data.month = data.today.getMonth() + 1;
     data.year = data.today.getFullYear();
     data.days = new Date(data.year, (data.month), 0).getDate();
-    data.startDay = new Date(data.year, (data.today.getMonth()), 1).getDay();
-    data.endDay = new Date(data.year, (data.month), 0).getDay();
+    data.monthStartDay = new Date(data.year, (data.today.getMonth()), 1).getDay();
+    data.monthEndDay = new Date(data.year, (data.month), 0).getDay();
     data.day = data.today.getDay();
     data.dayShortName = dayLabelShort[data.day];
     data.dayFullName = dayLabel[data.day];
     data.monthName = monthLabel[data.today.getMonth()];
+    data.date = data.today.getDate();
+    data.dateFormat = ((data.today.getDate() < 10 ? '0' : '') + data.today.getDate()) +"-"+((data.today.getMonth() + 1) < 10 ? '0' : '') + (data.today.getMonth() + 1) +"-"+ data.year;            
     return data;
 };
