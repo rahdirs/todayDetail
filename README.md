@@ -16,15 +16,17 @@ console.log(jdate.today());
 ### Output Object
 ```
 { 
-  today: 2019-08-27T09:55:02.497Z,
-  month: 8,
+  date: 6,
+  month: 9,
   year: 2019,
-  days: 31,
-  startDay: 4,
-  endDay: 6,
-  day: 2,
-  dayShortName: 'Tue',
-  dayFullName: 'Tuesday',
-  monthName: 'August' 
+  dateFormat: "06-09-2019",
+  day: 5,
+  dayShortName: "Fri",
+  dayFullName: "Friday",
+  days: 30,
+  monthName: "September",
+  monthStartDay: 0,
+  monthEndDay: 1,
+  today: Fri Sep 06 2019 18:50:30 GMT+0530 (India Standard Time)
 }
   ```
